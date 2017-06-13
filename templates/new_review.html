@@ -1,0 +1,55 @@
+<html>
+<head>
+<title>
+Review
+</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+    <div class="container">
+
+      <form class="form-signin" action="/review" method="post">
+        <h2 class="form-signin-heading">Please write your review</h2> 	
+        <br>
+        <div class=col-sm-12 style="padding: 2px">
+        <label class="col-sm-2">Rate your review:</label>
+        	<div class="col-sm-8">
+        	<label class="radio-inline">
+            	<input type="radio" name="rating"  value="0">0
+            </label>
+            <label class="radio-inline">
+              	<input type="radio" name="rating"  value="1">1
+            </label>
+            <label class="radio-inline">
+              	<input type="radio" name="rating"  value="2">2
+            </label>
+            <label class="radio-inline">
+              	<input type="radio" name="rating"  value="3">3
+            </label>
+            <label class="radio-inline">
+            	<input type="radio" name="rating"  value="4">4
+            </label>
+            <label class="radio-inline">
+            	<input type="radio" name="rating"  value="5" checked>5
+            </label> 
+            </div>
+        </div>
+        <br>
+        <div class="col-sm-12" style="padding: 2px">
+        <label class="col-sm-2" for="title">Title</label>
+        <input  class="col-sm-8" type="text"  id="title" name="title" placeholder="Title of your review"></input>
+        </div>
+        <br>
+        <div class="col-sm-12" style="padding: 2px">
+        <label class="col-sm-2" for="comments" class="sr-only">Comments</label>
+        <textarea class="col-sm-8"  id="comments" rows="4" cols="50" name="comments" placeholder="Please write your comments"></textarea>
+        </div>
+        <button class="btn btn-lg btn-primary" type="submit" value="Submit" >Submit</button>
+      </form>
+
+    </div>
+
+</body>
